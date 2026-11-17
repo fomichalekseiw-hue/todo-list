@@ -115,8 +115,7 @@ function TodosPage({ token }) {
                     'X-CSRF-TOKEN': token,
                 },
                 body: JSON.stringify({
-                    isCompleted: true,
-                    createdTime: originalTodo.createdTime,
+                    isCompleted: true
                 }),
                 credentials: 'include',
             });
@@ -160,8 +159,7 @@ function TodosPage({ token }) {
                 },
                 body: JSON.stringify({
                     title: editedTodo.title,
-                    isCompleted: editedTodo.isCompleted,
-                    createdTime: editedTodo.createdTime,
+                    isCompleted: editedTodo.isCompleted
                 }),
                 credentials: 'include',
             });
